@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const {Player}=require('../models/player');
+const {Player}=require('../models/players');
 
 router.get('/',(req,res)=>{
     Player.find((err,docs)=>{
