@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const player = mongoose.model('players', {
-    playerId:{type:Number},
+     playerId:{type:Number},
      playerName:{type:String},
      userName:{type:String},
      password:{type:String},
