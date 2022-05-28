@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose=require('mongoose')
 
-const player = mongoose.model('players', {
+ const Player=mongoose.model('Player',{
      playerId:{type:Number},
      playerName:{type:String},
      userName:{type:String},
@@ -9,6 +9,5 @@ const player = mongoose.model('players', {
      playerEquipments:{type:String},
      registrationDate:{type:Date},
      sportsPlay:{type:String}
-    
-});
-module.exports={Player};
+ });
+ module.exports={Player};
