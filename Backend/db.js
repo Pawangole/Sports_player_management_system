@@ -9,4 +9,3 @@ mongoose.connect('mongodb://localhost:27017/meanDB', (err)=>{
 })
  
 module.exports = mongoose;
-
