@@ -5,6 +5,7 @@ const { admin } = require('../models/admin');
 
 // ==========================SPORT================================
 // get for sport
+
 router.get('/',(req,res)=>{
     admin.find((err,doc)=>{
         if(!err){console.error(res.send(doc))}
