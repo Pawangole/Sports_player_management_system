@@ -7,7 +7,7 @@ const {Player}=require('../models/Player');
  
 // get Single player by Id
 
-router.get('/:playerId',(req,res)=>{
+router.get('/:id',(req,res)=>{
     if(ObjectId.isValid(req.params.id)){
      Player.findById(req.params.id,(err,doc)=>{
         if(err){
