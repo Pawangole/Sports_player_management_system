@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const ObjectId = require('mongoose').Types.ObjectId
-const {equipment} = require('../model/equipment')
+const {equipment} = require('../modules/equipment')
 
 // get method in equipment
 router.get('/',(req,res)=>{
