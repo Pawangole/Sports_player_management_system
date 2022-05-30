@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const ObjectId = require('mongoose').Types.ObjectId
-const { admin } = require('../modules/Admin');
+const { admin } = require('../modules/admin');
 
 // ==========================SPORT================================
 // get for sport
