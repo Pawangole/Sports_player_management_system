@@ -2,7 +2,7 @@
 const express=require('express');
 const ObjectId = require('mongoose').Types.ObjectId;
 const router=express.Router();
-const {sports}=require('../modules/Sports');
+const {sports}=require('../modules/sports');
 
 router.get('/:id',(req,res)=>{
     
