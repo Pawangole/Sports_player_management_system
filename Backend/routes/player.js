@@ -1,15 +1,17 @@
 
 const express=require('express');
-const ObjectId = require('mongoose').Types.ObjectId;
+const ObjectId= require('mongoose').Types.ObjectId;
+
 const router=express.Router();
-const {sports}=require('../models/sports');
+const {Player}=require('../models/player');
+ 
+// get Single player by Id
 
 router.get('/:id',(req,res)=>{
-    
     if(ObjectId.isValid(req.params.id)){
-     sports.findById(req.params.id,(err,doc)=>{
+     Player.findById(req.params.id,(err,doc)=>{
         if(err){
-            console.log('Error in get employee by id'+err)
+            console.log('Error in get player by id'+err)
        }
         else{
             res.send(doc);
@@ -20,10 +22,9 @@ router.get('/:id',(req,res)=>{
     }
 });
 
-
-// Get sports
+// Get Players
 router.get('/',(req,res)=>{
-    sports.find((err,doc)=>{
+    Player.find((err,doc)=>{
        if(err){
             console.log('Error i Post Data'+err)
         }
@@ -34,15 +35,20 @@ router.get('/',(req,res)=>{
 
 });
 
-// Add Sports
+// Add Players
 
 router.post('/',(req,res)=>{
-    let sport=new sports({
-        id:req.body.id,
-        name:req.body.name,
-        fee:req.body.fee
+    let play=new Player({
+        playerId:req.body.playerId,
+     playerName:req.body.playerName,
+     userName:req.body.userName,
+     password:req.body.password,
+     phoneNo:req.body.phoneNo,
+     playerEquipments:req.body.playerEquipments,
+     registrationDate:req.body.registrationDate,
+     sportsPlay:req.body.sportsPlay
     });
-    sport.save((err,doc)=>{
+    play.save((err,doc)=>{
         if(err){
             console.log('Error i Post Data'+err)
         }
@@ -53,15 +59,20 @@ router.post('/',(req,res)=>{
 });
   
 
-// Update Sports
+// Update Player
 router.put('/:id',(req,res)=>{
-    var sport={
-        id:req.body.id,
-        name:req.body.name,
-        fee:req.body.fee
+    var play={
+        playerId:req.body.playerId,
+     playerName:req.body.playerName,
+     userName:req.body.userName,
+     password:req.body.password,
+     phoneNo:req.body.phoneNo,
+     playerEquipments:req.body.playerEquipments,
+     registrationDate:req.body.registrationDate,
+     sportsPlay:req.body.sportsPlay
     }
     if(ObjectId.isValid(req.params.id)){
-     sports.findByIdAndUpdate(req.params.id,{$set:sport},{new:true},(err,doc)=>{
+     Player.findByIdAndUpdate(req.params.id,{$set:play},{new:true},(err,doc)=>{
         if(err){
             console.log('Error in get employee by id'+err)
        }
@@ -74,10 +85,10 @@ router.put('/:id',(req,res)=>{
     }
 });
 
-// Delete Sports
+// Delete Player
 router.delete('/:id',(req,res)=>{
     if(ObjectId.isValid(req.params.id)){
-     sports.findByIdAndRemove(req.params.id,(err,doc)=>{
+     Player.findByIdAndRemove(req.params.id,(err,doc)=>{
         if(err){
             console.log('Error in delete employee by id'+err)
        }
