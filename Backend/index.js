@@ -3,10 +3,10 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 
 const mongoose = require('./db.js');
-const player=require('./routers/players.js');
-const sports=require('./routers/sports.js');
-const equipment=require('./routers/equipment.js');
-const  admin  = require('./routers/admin.js');
+const player=require('./routes/players.js');
+const sports=require('./routes/sports.js');
+const equipment=require('./routes/equipment.js');
+const  admin  = require('./routes/admin.js');
 
 const app = express();
 app.use(bodyparser.json());
