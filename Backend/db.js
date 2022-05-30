@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost:27017/meanDB', (err)=>{
-    if(!err){
-        console.log('db connection successful')
-    }else{
-        console.log('error in connection' + err)
-    }
-})
  
+mongoose.connect("mongodb://localhost:27017/sportapp",(err)=>{
+    if(!err){
+        console.log("connected")
+    }else{
+        console.log("error in connecting db")
+    }
+});
+
 module.exports = mongoose;
+
