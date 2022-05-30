@@ -3,7 +3,7 @@ const express=require('express');
 const ObjectId= require('mongoose').Types.ObjectId;
 
 const router=express.Router();
-const {Player}=require('../modules/Player');
+const {Player}=require('../modules/player');
  
 // get Single player by Id
 
