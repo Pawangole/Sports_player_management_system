@@ -44,20 +44,7 @@ router.put('/:id',(req,res)=>{
   }
 });
 
-router.delete('/:id',(req,res)=>{
-    if(ObjectId.isValid(req.params.id)){
-     admin.findByIdAndRemove(req.params.id,(err,doc)=>{
-        if(err){
-            console.log('Error in delete employee by id'+err)
-       }
-        else{
-            res.send(doc);
-        }
-     });
-    }else{
-        return res.status(400).send('No record found with id'+req.params.id)
-    }
-});
+
 
 
 module.exports = router;
