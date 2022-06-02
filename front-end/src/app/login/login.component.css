@@ -1,0 +1,35 @@
+.card{
+    margin: auto;
+    border: none;
+    width: 500px;
+    padding: 40px;
+    color: aliceblue;
+    position: absolute;
+    top: 15%;
+    left: 31%;
+    background: rgb(16, 104, 181);
+    
+}
+
+.h{
+    text-align: center;
+    
+}
+.form-group{
+    padding: auto;
+    margin-top: 10px;
+ 
+}
+.form-control{
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: auto;
+    width: 400px;
+}
+.btn{
+    margin-top: 10px;
+    color: rgb(245, 250, 245);
+    background-color: rgb(128, 0, 0);
+    text-align: center;
+    margin-left: 200px;
+}
