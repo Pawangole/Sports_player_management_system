@@ -32,4 +32,8 @@
     background-color: rgb(128, 0, 0);
     text-align: center;
     margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
