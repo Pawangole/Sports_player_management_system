@@ -3,6 +3,7 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 
 const mongoose = require('./db.js');
+
 const player=require('./routes/player.js');
 const sports=require('./routes/sports.js');
 const equipment=require('./routes/equipment.js');
