@@ -1,8 +1,4 @@
-.container{
-    margin: 2px;
-    padding: 4px;
-    width: 100%;
-}
+
 
 .banner img {
     width:100%;
@@ -10,7 +6,7 @@
 .intro-text { 
     width:100%; 
     position: absolute; 
-    top:30%; 
+    top:33%; 
     text-align: center; 
     color:rgb(1, 1, 1);
 }
@@ -18,8 +14,8 @@
     width: 62%;
     margin: auto;
     background-color: rgba(96, 96, 96, 0.6);
-    padding: 20px;
-    border: 10px solid #808080;
+    padding: 30px;
+    border: 10px solid #9e9ebf;
 }
 .intro-text-box h1 {
     font-size:3em;
