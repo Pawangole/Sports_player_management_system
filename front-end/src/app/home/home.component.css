@@ -8,17 +8,18 @@
     position: absolute; 
     top:33%; 
     text-align: center; 
-    color:rgb(1, 1, 1);
+    color:rgb(249, 244, 244);
 }
 .intro-text-box { 
     width: 62%;
     margin: auto;
-    background-color: rgba(96, 96, 96, 0.6);
+    background-color: rgba(38, 93, 203, 0.252);
     padding: 30px;
     border: 10px solid #9e9ebf;
 }
 .intro-text-box h1 {
     font-size:3em;
+    color: #000;
 }
 
 
