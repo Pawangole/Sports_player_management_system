@@ -1,13 +1,19 @@
+.img{
+    width: 100%;
+    height: 1100px;
+    padding-bottom: 150px;
+    height: auto;
+}
 .card{
-    margin: auto;
-    border: none;
+    border: 2px black;
     width: 500px;
-    padding: 30px;
-    color: aliceblue;
+    padding: 40px;
+    color: rgb(247, 248, 249);
     position: absolute;
-    top: auto;
-    left: 30%;
-    background: rgb(16, 104, 181);
+    top: 9.5%;
+    left: 31%;
+    background-color: rgba(96, 96, 96, 0.6);
+
     
 }
 .h{
@@ -20,7 +26,7 @@
     width: 150px;
 }
 .form-control{
-    margin-top: 10px;
+    margin-top: 0%;
     margin-left: 40px;
     padding: auto;
     width: 400px;

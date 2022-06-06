@@ -1,4 +1,23 @@
-<app-header></app-header>
-<app-banner></app-banner>
-<app-footer></app-footer>
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+    <ul class="menu nav navbar-nav" routerLinkActive="active">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Admin">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">player login</a>
+        <!-- <a class="nav-link" routerLink="/signup">player signup</a> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="./contact">contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="./about">about us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <router-outlet></router-outlet>

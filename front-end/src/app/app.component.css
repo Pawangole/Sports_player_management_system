@@ -1,0 +1,49 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+   a {
+    display: block;
+    text-decoration: none;
+   
+   }
+   li {
+    float: right;
+    list-style: none;
+    color: #fff;
+  
+   }
+   .navbar{
+    padding: 2px;
+    background-color: rgb(47, 14, 232);
+    
+   }
+
+   .nav-link{
+   color: #fff;
+   }
+
+   .navbar-brand{
+       font-size: 32px;
+       
+   }
+   .menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+
+   .menu li:hover {
+    background-color: #bfbee9;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+

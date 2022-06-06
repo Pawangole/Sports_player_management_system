@@ -1,5 +1,8 @@
+.img{
+    width: 100%;
+}
 .card{
-    margin: auto;
+    margin-top: 150px;
     border: none;
     width: 500px;
     padding: 40px;
@@ -7,7 +10,7 @@
     position: absolute;
     top: 15%;
     left: 31%;
-    background: rgb(16, 104, 181);
+    background-color: rgba(96, 96, 96, 0.6);
     
 }
 

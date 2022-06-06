@@ -1,0 +1,42 @@
+.container{
+    margin: 2px;
+    padding: 4px;
+    width: 100%;
+}
+
+.banner img {
+    width:100%;
+}
+.intro-text { 
+    width:100%; 
+    position: absolute; 
+    top:30%; 
+    text-align: center; 
+    color:rgb(1, 1, 1);
+}
+.intro-text-box { 
+    width: 62%;
+    margin: auto;
+    background-color: rgba(96, 96, 96, 0.6);
+    padding: 20px;
+    border: 10px solid #808080;
+}
+.intro-text-box h1 {
+    font-size:3em;
+}
+
+
+/* footer style */
+
+footer {
+    background-color: #000;
+    color:#fff; 
+    padding:20px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 767px) {
+.intro-text {display: none;}
+}
